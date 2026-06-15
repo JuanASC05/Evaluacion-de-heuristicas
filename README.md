@@ -86,7 +86,7 @@ Durante la revisión de la landing page se identificaron textos sin tildes o con
 Este problema no bloquea el uso de la plataforma, pero afecta la percepción de calidad, formalidad y confiabilidad del producto. Además, genera una experiencia menos cuidada para el usuario final.
 
 **Evidencia:**  
-![Errores de ortografía en landing](docs/assets/evaluation/heuristics/problem-01-spelling.png)
+![Errores de ortografía en landing](ejm falta de ortografia.png)
 
 **Recomendación:**  
 Corregir los textos visibles en la interfaz aplicando tildes y una redacción uniforme. Por ejemplo:
@@ -113,7 +113,7 @@ En la sección de planes, el plan Professional muestra el precio como `49 /mes`,
 La información económica debe ser clara, especialmente en una sección orientada a conversión comercial.
 
 **Evidencia:**  
-![Precio sin moneda en planes](docs/assets/evaluation/heuristics/problem-02-price-currency.png)
+![Precio sin moneda en planes](planesError.png)
 
 **Recomendación:**  
 Indicar explícitamente la moneda del plan. Por ejemplo:
@@ -136,7 +136,7 @@ En la sección de contacto se observa un bloque visual que representa un mapa o 
 Esto puede generar la percepción de que la sección está incompleta, especialmente porque el usuario espera encontrar información útil para ubicar o contactar a la empresa.
 
 **Evidencia:**  
-![Mapa vacío en sección contacto](docs/assets/evaluation/heuristics/problem-03-empty-map.png)
+![Mapa vacío en sección contacto](mapaSeccionContacto.png)
 
 **Recomendación:**  
 Reemplazar el bloque vacío por un mapa embebido, una imagen de ubicación o un botón que redirija a Google Maps. Si la ubicación aún no está definida, se recomienda mostrar un mensaje claro como:
@@ -158,7 +158,7 @@ El usuario no recibe una explicación clara sobre qué ocurrió, qué campo debe
 Este problema es crítico porque impide completar una tarea principal de la landing page: comunicarse con la empresa.
 
 **Evidencia:**  
-![Error 405 en formulario de contacto](docs/assets/evaluation/heuristics/problem-04-contact-405.png)
+![Error 405 en formulario de contacto](error405.png)
 
 **Recomendación:**  
 Evitar que el formulario redirija a una página técnica. En su lugar, se debe validar el formulario desde la interfaz y mostrar mensajes comprensibles. Por ejemplo:
@@ -183,7 +183,7 @@ El formulario permite intentar el envío aunque existan campos vacíos o incompl
 El sistema debería prevenir el error antes de realizar el envío, especialmente porque el usuario puede no saber qué información falta.
 
 **Evidencia:**  
-![Formulario sin validaciones completas](docs/assets/evaluation/heuristics/problem-05-contact-validation.png)
+![Formulario sin validaciones completas](imagen_2026-06-15_174315198.png)
 
 **Recomendación:**  
 Agregar validaciones frontend antes del envío. Se recomienda:
@@ -207,7 +207,7 @@ Cuando el usuario envía el formulario, el sistema no muestra si el mensaje se e
 Esto impide que el usuario conozca el estado real de la acción realizada.
 
 **Evidencia:**  
-![Formulario sin feedback de envío](docs/assets/evaluation/heuristics/problem-06-contact-status.png)
+![Formulario sin feedback de envío](imagen_2026-06-15_174315198.png)
 
 **Recomendación:**  
 Mostrar retroalimentación clara dentro de la misma interfaz. Por ejemplo:
@@ -231,7 +231,7 @@ En el módulo `Avances`, al intentar crear un nuevo avance diario, el registro n
 Se considera una severidad baja debido a que esta funcionalidad puede estar simulada o depender de una persistencia deshabilitada para la versión evaluada. Sin embargo, desde la experiencia del usuario, la interfaz debería comunicar si la acción fue guardada, falló o corresponde a una simulación.
 
 **Evidencia:**  
-![Avance no registrado](docs/assets/evaluation/heuristics/problem-07-progress-not-saved.png)
+![Avance no registrado](avanceNoRegistrado.png)
 
 **Recomendación:**  
 Mostrar un mensaje claro al usuario. Por ejemplo:
@@ -255,7 +255,7 @@ El calendario de avances aparece vacío incluso después de intentar registrar u
 La severidad se considera baja porque puede tratarse de una funcionalidad simulada o parcialmente implementada.
 
 **Evidencia:**  
-![Calendario sin avances](docs/assets/evaluation/heuristics/problem-08-empty-calendar.png)
+![Calendario sin avances](calendarioNoModificado.png)
 
 **Recomendación:**  
 Agregar un estado vacío más descriptivo, por ejemplo:
@@ -277,7 +277,7 @@ En la sección de bitácora fotográfica, los botones `Subir Fotos`, el bloque c
 Aunque estas funciones pueden estar simuladas en esta versión del frontend, el usuario no recibe ningún mensaje que explique el estado de la funcionalidad.
 
 **Evidencia:**  
-![Botones de bitácora sin acción visible](docs/assets/evaluation/heuristics/problem-09-photo-buttons.png)
+![Botones de bitácora sin acción visible](errorbotonesExportar.png)
 
 **Recomendación:**  
 Agregar retroalimentación cuando el usuario interactúe con estos controles. Por ejemplo:
@@ -305,7 +305,7 @@ Este mensaje no está orientado al usuario final, ya que menciona un detalle té
 El problema principal no es únicamente que la persistencia falle, sino que el mensaje de error no ayuda al usuario a recuperarse.
 
 **Evidencia:**  
-![Error técnico db.json en RNC](docs/assets/evaluation/heuristics/problem-10-rnc-dbjson-error.png)
+![Error técnico db.json en RNC](errorDbjson2.png)
 
 **Recomendación:**  
 Reemplazar el mensaje técnico por un mensaje claro y orientado al usuario. Por ejemplo:
@@ -331,7 +331,7 @@ En el módulo `Firmas`, al ingresar un código de verificación incorrecto, el s
 El mensaje está en inglés y usa el término técnico `token`, lo cual puede no ser entendido por un usuario final. El usuario espera una explicación relacionada con el código de verificación que ingresó, no con un concepto técnico interno.
 
 **Evidencia:**  
-![Error Incorrect token en firma](docs/assets/evaluation/heuristics/problem-11-incorrect-token.png)
+![Error Incorrect token en firma](errortoken.png)
 
 **Recomendación:**  
 Reemplazar el mensaje por uno más claro, en español y alineado al flujo de firma. Por ejemplo:
