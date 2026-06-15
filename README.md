@@ -86,7 +86,7 @@ Durante la revisión de la landing page se identificaron textos sin tildes o con
 Este problema no bloquea el uso de la plataforma, pero afecta la percepción de calidad, formalidad y confiabilidad del producto. Además, genera una experiencia menos cuidada para el usuario final.
 
 **Evidencia:**  
-![Errores de ortografía en landing](ejm falta de ortografia.png)
+![Errores de ortografía en landing](ejmfaltadeortografia.png)
 
 **Recomendación:**  
 Corregir los textos visibles en la interfaz aplicando tildes y una redacción uniforme. Por ejemplo:
